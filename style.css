@@ -140,3 +140,9 @@ header ul li a {
 .social li {
     list-style: none;
 }
+
+.social li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+}
