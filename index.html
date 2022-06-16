@@ -33,20 +33,25 @@
             </div>
         </div>
         <ul class="thumb">
-            <li><img src="images/thumb1.png" alt=""></li>
-            <li><img src="images/thumb2.png" alt=""></li>
-            <li><img src="images/thumb3.png" alt=""></li>
+            <li><img src="images/thumb1.png" alt="" onclick="imgSlider('images/green-drink.png')"></li>
+            <li><img src="images/thumb2.png" alt="" onclick="imgSlider('images/pink-drink.png')"></li>
+            <li><img src="images/thumb3.png" alt="" onclick="imgSlider('images/unicorn-drink.png')"></li>
         </ul>
         <ul class="social">
-            <li><a href="#"><img src="images/facebook.png" alt="" onclick="imgSlider('images/green-drink.png')"></a></li>
-            <li><a href="#"><img src="images/twitter.png" alt="" onclick="imgSlider('images/pink-drink.png')"></a></li>
-            <li><a href="#"><img src="images/instagram.png" alt="" onclick="imgSlider('images/unicorn-drink.png')"></a></li>
+            <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
         </ul>
     </section>
 
     <script type="text/javascript">
         function imgSlider(anything){
             document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
         }
     </script>
 </body>
